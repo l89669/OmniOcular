@@ -46,10 +46,4 @@ public class OmniOcular {
         proxy.registerServerCommand(event);
     }
 
-    @NetworkCheckHandler
-    public static boolean check(Map<String, String> remote, Side side) {
-        return !(side == Side.SERVER && !remote.isEmpty() && !remote.containsKey(Reference.MOD_ID));
-    }
-
-
 }
